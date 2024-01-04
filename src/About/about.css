@@ -1,0 +1,40 @@
+.about-container{
+    display: flex;
+    width: 90%;
+    gap: 70px;
+    text-align: center;
+    align-items: center;
+}
+
+h6{
+    padding-bottom: 4%;
+}
+
+.container-img{
+    width: 50%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    padding-top: 360px;
+}
+img{
+    width: 300px;
+    margin-left:150px;
+    border-radius: 100%;
+}
+.text{
+    width: 50%;
+    font-size:13px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-weight: 400;
+    font-size:small;
+    font-style: normal;
+    line-height: 25px;
+}

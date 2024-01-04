@@ -1,0 +1,70 @@
+.main-container-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 20% 0 5% 0;
+
+}
+
+.skills-container p{
+    color: white;
+    font-size:13px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size:small;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 2px; 
+
+    
+}
+
+
+.front-back{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.herramientas-skills{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.frontend{
+    flex-direction: column;
+   
+}
+
+.backend{
+    flex-direction: column;
+}
+
+.herramientas{
+    
+    flex-direction: column;
+}
+
+.soft-skills{
+   flex-direction: column;
+}
+
+
+.text-skills{
+   text-align: center;
+}
+
+.img-skills{
+    width: 33%;
+}
