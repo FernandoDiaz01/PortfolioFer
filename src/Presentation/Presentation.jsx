@@ -1,13 +1,11 @@
 
+import { redirectSocialMedia } from '../linkSocialMedia'
 import './presentation.css'
 
 
 export const Presentation = () => {
-
-const redirectSocialMedia = (url) =>{
-  window.open(url,'_blank');
-}
-
+  
+  
   return (
     <>
     <div className="main-container">

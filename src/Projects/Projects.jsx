@@ -1,22 +1,11 @@
 import './Projects.css'
 import frontEndImg from "../assets/frontend.png";
+import { ProjectsSection } from './ProjectsSection';
+import { redirectSocialMedia } from '../linkSocialMedia';
 
 
-const ProjectsSection = ({imgProject,altText, descriptionProject}) => {
-  return (
-    <div className="project-section-container">
-      
-      <img className='img-project' src={imgProject} alt={altText} />
-      <div className="container-description-project">
-      <p className='description-project' >{descriptionProject} </p>
-      </div>
-    <div className="container-buttons-projects">
-      <button className='btn-projects'>GitHub</button>
-      <button className='btn-projects'>Deploy</button>
-    </div>
-    </div>
-  )
-}
+
+
 
 
 export const Projects = () => {
@@ -32,17 +21,20 @@ export const Projects = () => {
         imgProject={frontEndImg}
         alt="Proyecto sobre alarmas"
         descriptionProject="Esta hecho con alarmas comunitarias"
+        onClick={()=>redirectSocialMedia('https://to-do-list-app-t5vg.vercel.app/')}
         />
       
         <ProjectsSection 
         imgProject={frontEndImg}
         alt="Proyecto sobre alarmas"
         descriptionProject="Esta hecho con alarmas comunitarias"
+        
         />
         <ProjectsSection 
         imgProject={frontEndImg}
         alt="Proyecto sobre alarmas"
         descriptionProject="Esta hecho con alarmas comunitarias"
+        
         />
         </div>
         
