@@ -1,7 +1,11 @@
 import { redirectSocialMedia } from "../linkSocialMedia"
 
-export const ProjectsSection = ({imgProject, altText, descriptionProject, redirectSocialMedia}) => {
+export const ProjectsSection = ({imgProject, altText, descriptionProject,urlDeploy, urlGithub }) => {
 
+  const handleClick = (url)=>{
+    redirectSocialMedia(url)
+  }
+  
     return (
       <div className="project-section-container">
         <img className='img-project' src={imgProject} alt={altText} />
@@ -9,8 +13,8 @@ export const ProjectsSection = ({imgProject, altText, descriptionProject, redire
         <p className='description-project' >{descriptionProject} </p>
         </div>
       <div className="container-buttons-projects">
-        <button onClick={()=> redirectSocialMedia()}  className='btn-projects'>GitHub</button>
-        <button onClick={()=>redirectSocialMedia()} className='btn-projects'>Deploy</button>
+        <button onClick={()=>handleClick(urlGithub)}  className='btn-projects'>GitHub</button>
+        <button onClick={()=>handleClick(urlDeploy)} className='btn-projects'>Deploy</button>
       </div>
       </div>
     )

@@ -11,6 +11,7 @@ import { redirectSocialMedia } from '../linkSocialMedia';
 export const Projects = () => {
 
 
+
   return (
     <div className="projects-container">
         <div className="title-projects-container">
@@ -21,7 +22,8 @@ export const Projects = () => {
         imgProject={frontEndImg}
         alt="Proyecto sobre alarmas"
         descriptionProject="Esta hecho con alarmas comunitarias"
-        onClick={()=>redirectSocialMedia('https://to-do-list-app-t5vg.vercel.app/')}
+        urlDeploy='https://to-do-list-app-t5vg.vercel.app/'
+        urlGithub='https://github.com/FernandoDiaz01'
         />
       
         <ProjectsSection 

@@ -4,15 +4,15 @@ import "./about.css";
 export const About = () => {
   return (
     <>
-      <div className="title" id="section1">
+      <div className="title" id="presentation">
         <h6>Sobre mi</h6>
       </div>
-      <div className="about-container">
+      <div className="about-container" >
         <div className="container-img">
           <img src={img} alt="imgportfolio" />
         </div>
 
-        <div className="text">
+        <div className="text"  >
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
             saepe cumque consequuntur fugiat quidem illum harum? Eaque ducimus
