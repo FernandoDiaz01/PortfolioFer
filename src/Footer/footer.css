@@ -1,0 +1,15 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.text-footer{
+    color: white;
+    font-size: 15px;
+}
+hr{
+  color: white;
+}

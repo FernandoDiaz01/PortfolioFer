@@ -4,3 +4,7 @@
     justify-content: space-between;
     height: 100vh;
 }
+
+body, html {
+    background-color: #24243e
+  }

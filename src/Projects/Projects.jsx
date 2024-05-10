@@ -13,7 +13,7 @@ export const Projects = () => {
 
 
   return (
-    <div className="projects-container">
+    <div className="projects-container" id='projects'>
         <div className="title-projects-container">
         <h1 className='title-projects'>Individual Projects</h1>
         </div>

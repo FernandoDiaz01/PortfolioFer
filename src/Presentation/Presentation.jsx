@@ -7,8 +7,8 @@ export const Presentation = () => {
     <>
       <div className="main-container">
         <div className="presentation">
-          <h1 className="h1">Fernando Diaz</h1>
-          <h3 className="h3">Desarrollador Full Stack</h3>
+          <h1 className="h1"data-text="Fernando Diaz">Fernando Diaz</h1>
+          <h3 className="h3" data-text="Desarrollador Full Stack">Desarrollador Full Stack</h3>
           
         </div>
 

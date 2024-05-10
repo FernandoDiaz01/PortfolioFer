@@ -4,17 +4,17 @@ export const Navbar = () => {
   return (
     <div className="navbar-container">
       <ul className="list-container">
-        <li className="list">
+        <li>
           <a href="#presentation">About</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </div>
