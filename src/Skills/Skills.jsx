@@ -1,12 +1,15 @@
 import "./skills.css";
 import skillsInfo from "./skillsData";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+
+  const { t } = useTranslation(['universal']);
   return (
     <>
       <div id="skills">
         <div className="title-container-skills">
-        <h2 className="title-skills">Habilidades</h2>
+        <h2 className="title-skills">{t("skills.title")}</h2>
         </div>
         <div className="skill-cards">
           {skillsInfo.map((skill, index) => (

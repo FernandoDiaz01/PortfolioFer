@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "presentation": "Presentation",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contacts"
+  },
+  "presentation": {
+    "subtitle": "Developer {{ name }}"
+  },
+  "about": {
+    "title": "About me",
+    "about": "I am focused on front-end development using React and I am open to learning other tools. Additionally, I am studying back-end development to become a full stack developer. Initially, I started my studies in Psychology for two years, but my interest programming led me to dedicate myself exclusively to it. I learned programming by watching videos on YouTube and using other platforms, which allowed me to acquire enough knowledge to create a database, connect it to the backend and make requests from the Mi front-end. The goal is to delve deeper into back-end development to better understand data management and the underlying concepts."
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects":{
+    "title":"Individual Projects",
+    "description1": "Rick and Morty series application where you can see a list of the characters and a form for you to create yours!",
+    "description2":"Application to create task lists so you can see them in real time, you can edit and delete as you like!",
+    "description3":"Project so you can see the price of the dollar quote updating in real time!"
+  },
+  "contact":{
+    "title":"Contact",
+    "name":"Name",
+    "lastname":"Lastname",
+    "email":"Email",
+    "message":"Message",
+    "send":"Send",
+    "sent":"Sent",
+    "nameError": "Please enter a valid first name",
+    "lastnameError":"Please enter a valid last name",
+    "emailError":"Please enter a valid email",
+    "messageError":"Please enter a valid message"
+  },
+  "footer":{
+    "copyright":"Copyright © | All rights reserved. Made by {{ name }}."
+  }
+
+}

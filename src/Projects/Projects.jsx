@@ -1,42 +1,41 @@
 import './Projects.css'
-import frontEndImg from "../assets/frontend.png";
+import  todoapp  from "../assets/todoapp.png";
+import  rickandmorty  from "../assets/rickandmorty.png";
 import { ProjectsSection } from './ProjectsSection';
-import { redirectSocialMedia } from '../linkSocialMedia';
-
-
-
-
-
-
+import { useTranslation } from "react-i18next";
 export const Projects = () => {
 
-
+  const { t } = useTranslation(['universal']);
 
   return (
     <div className="projects-container" id='projects'>
         <div className="title-projects-container">
-        <h1 className='title-projects'>Individual Projects</h1>
+        <h1 className='title-projects'>{t("projects.title")}</h1>
         </div>
         <div className="section-projects">
         <ProjectsSection 
-        imgProject={frontEndImg}
+    
+        imgProject={rickandmorty}
         alt="Proyecto sobre alarmas"
-        descriptionProject="Esta hecho con alarmas comunitarias"
-        urlDeploy='https://to-do-list-app-t5vg.vercel.app/'
+        descriptionProject={t("projects.description1")}
+        urlDeploy='https://to-do-list-app-finished.vercel.app/'
         urlGithub='https://github.com/FernandoDiaz01'
         />
       
         <ProjectsSection 
-        imgProject={frontEndImg}
+        imgProject={todoapp} 
         alt="Proyecto sobre alarmas"
-        descriptionProject="Esta hecho con alarmas comunitarias"
+        descriptionProject={t("projects.description2")}
+        urlDeploy={"https://to-do-list-app-finished.vercel.app/"}
+        urlGithub={"https://github.com/FernandoDiaz01/To-Do-List-App"}
         
         />
         <ProjectsSection 
-        imgProject={frontEndImg}
+        imgProject={todoapp}
         alt="Proyecto sobre alarmas"
-        descriptionProject="Esta hecho con alarmas comunitarias"
-        
+        descriptionProject={t("projects.description3")}
+        urlDeploy='https://to-do-list-app-finished.vercel.app/'
+        urlGithub='https://github.com/FernandoDiaz01'
         />
         </div>
         

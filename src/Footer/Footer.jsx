@@ -1,14 +1,18 @@
-import './footer.css';
-
+import "./footer.css";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation(["universal"]);
+
   return (
     <>
-   
-    <hr />
-    <div className="footer-container">
-        <div className='text-footer'> Copyright © | All rights reserved. Made by Fernando Diaz. </div>
-    </div>
+      <hr />
+      <div className="footer-container">
+        <div className="text-footer">
+          {" "}
+          {t("footer.copyright", { name: "Fernando Diaz" })}{" "}
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};

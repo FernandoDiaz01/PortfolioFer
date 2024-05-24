@@ -13,3 +13,13 @@
 hr{
   color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  .footer-container {
+      flex-direction: row; /* Cambiado a fila para pantallas más pequeñas */
+  }
+
+  .text-footer {
+      margin: 0 10px; /* Agregado espacio alrededor del texto para pantallas más pequeñas */
+  }
+}

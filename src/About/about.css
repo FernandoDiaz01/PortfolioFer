@@ -4,13 +4,16 @@
     gap: 70px;
     text-align: center;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 }
 
 h6{
     padding-bottom: 4%;
 }
-
+.text-about{
+    font-size: 16px;
+    letter-spacing: normal;
+}
 .container-img{
     width: 50%;
 }
@@ -22,10 +25,10 @@ h6{
     font-size:40px;
     font-family: 'Dancing Script', cursive;
     color: white;
-    padding-top: 20%;
+    padding-top: 25%;
 }
-img{
-    width: 300px;
+.img-about{
+    width: 50%;
     margin-left:150px;
     border-radius: 100%;
 }
@@ -38,4 +41,30 @@ img{
     font-size:small;
     font-style: normal;
     line-height: 25px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Cambié la dirección del flexbox a columna para pantallas más pequeñas */
+        align-items: flex-start; /* Alineación del contenido a la izquierda */
+        gap: 3%; /* Reduje el espacio entre los elementos */
+        margin-bottom: 5%; /* Reduje el margen inferior */
+    }
+
+    .container-img,
+    .text {
+        width: 100%; /* Establecí el ancho al 100% para ocupar todo el espacio disponible */
+    }
+
+    .title {
+        font-size: 24px; /* Reduje el tamaño del título */
+        padding-top: 5%; /* Reduje el espacio superior */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .img-about {
+        width: 60%; /* Aumenté ligeramente el tamaño de la imagen */
+        margin: 0 auto; /* Centrar la imagen horizontalmente */
+    }
 }

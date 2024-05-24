@@ -1,21 +1,42 @@
-import { redirectSocialMedia } from "../linkSocialMedia"
+import { redirectSocialMedia } from "../linkSocialMedia";
 
-export const ProjectsSection = ({imgProject, altText, descriptionProject,urlDeploy, urlGithub }) => {
+export const ProjectsSection = ({
+  imgProject,
+  altText,
+  descriptionProject,
+  urlDeploy,
+  urlGithub,
 
-  const handleClick = (url)=>{
-    redirectSocialMedia(url)
-  }
-  
-    return (
-      <div className="project-section-container">
-        <img className='img-project' src={imgProject} alt={altText} />
-        <div className="container-description-project">
-        <p className='description-project' >{descriptionProject} </p>
-        </div>
+}) => {
+  const handleClick = (url) => {
+    redirectSocialMedia(url);
+  };
+
+  return (
+    <div className="project-section-container">
+      <div className="container-img-projects">
+        <img className="img-project" src={imgProject} alt={altText} />
+      </div>
+      <div className="container-description-project">
+        <p className="description-project">{descriptionProject} </p>
+      </div>
       <div className="container-buttons-projects">
-        <button onClick={()=>handleClick(urlGithub)}  className='btn-projects'>GitHub</button>
-        <button onClick={()=>handleClick(urlDeploy)} className='btn-projects'>Deploy</button>
+        <button onClick={() => handleClick(urlGithub)} className="btn-projects">
+          <img
+            className="img-projects"
+            src="./src/Skills/imagesSkills/github.svg"
+            alt="GitHub"
+          />
+        </button>
+
+        <button onClick={() => handleClick(urlDeploy)} className="btn-projects">
+          <img
+            className="img-projects"
+            src="./src/Skills/imagesSkills/deploy.svg"
+            alt="Deploy"
+          />
+        </button>
       </div>
-      </div>
-    )
-  }
+    </div>
+  );
+};

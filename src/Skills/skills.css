@@ -2,15 +2,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-end;
   margin-bottom: 15%;
 }
 
 .skill-card {
   width: 200px;
-  margin: 10px;
+  margin: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.skill-card:hover{
+  scale: 1.2;
+  transition: all 1s ease;
 }
 
 .images-skills-container {
@@ -24,6 +31,7 @@
 .img-skills {
   max-width: 100%;
   max-height: 70px;
+  color: white;
 }
 
 .container-name-skills {
@@ -41,5 +49,21 @@
 
 .title-skills{
   font-size: 35px;
+color: white;
+}
+
+.skill-name{
   color: white;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+  .skill-card {
+    width: 150px; /* Reduje el ancho de las tarjetas para pantallas más pequeñas */
+    margin: 10px; /* Reduje el margen entre las tarjetas */
+  }
+
+  .title-skills {
+    font-size: 24px; /* Reduje aún más el tamaño del título */
+  }
 }

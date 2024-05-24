@@ -22,18 +22,18 @@ body, html {
   
 }
 
-h1{
+.h1{
     font-size:70px;
     font-family: 'Dancing Script', cursive;
-    color: white;
+    color: white; 
     
   }
 
 
-h3{
+.h3{
 
     font-size: 20px;
-    color: rgb(206, 192, 192);
+   color:white 
 
 }
 
@@ -96,10 +96,13 @@ ul {
   transition: 0.5s ease;
   z-index: 2;
 }
-
+.item a:hover{
+  scale: 1.1;
+}
 .item a:hover .icon {
   color: #fff;
   transform: rotateY(360deg);
+  scale: 1.2;
 }
 
 .item:nth-child(1) {
@@ -111,37 +114,6 @@ ul {
 .item:nth-child(3) {
   
   --bg-color: #0077b5;
-}
-
-.h3,h1 {
- 
-  position: relative;
-  cursor: pointer;
-}
-.h1::after{
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.3s ease;
-  transform-origin: center bottom; 
-  transform: scaleY(0); 
-}
-.h1:hover::after {
-  transform: scaleY(1);
-}
-.h3::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.3s ease; 
-  transform-origin: center bottom; 
-  transform: scaleY(0);
-}
-
-.h3:hover::after {
-  transform: scaleY(1); 
 }
 
 @keyframes bounce{
@@ -158,4 +130,13 @@ ul {
 }
 
 
+/* Media Query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .h1 {
+      font-size: 40px; /* Adjusted font size for smaller screens */
+  }
 
+  .h3 {
+      font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+}

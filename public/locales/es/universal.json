@@ -1,0 +1,42 @@
+{
+  "navbar": {
+    "presentation": "Presentación",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "presentation":{
+    "subtitle":"Desarrollador {{ name }}"
+  },
+  "about":{
+    "title":"Sobre mi",
+    "about":"Estoy enfocado en el desarrollo front-end utilizando React y estoy abierto a aprender otras herramientas. Además, estoy estudiando el desarrollo back-end para convertirme en un desarrollador full stack. Inicialmente, comencé mis estudios en Psicología durante dos años, pero mi interés por la programación me llevó a dedicarme exclusivamente a ello. Aprendí programación viendo videos en YouTube y utilizando otras plataformas, lo que me permitió adquirir conocimientos suficientes para crear una base de datos, conectarla con el backend y realizar solicitudes desde el front-end. Mi objetivo es profundizar en el desarrollo back-end para comprender mejor el manejo de datos y los conceptos subyacentes."
+  },
+  "skills":{
+    "title":"Habilidades"
+  },
+  "projects":{
+    "title":"Proyectos Individuales",
+    "description1": "Aplicación de serie Rick and Morty donde puedes ver un listado con los personajes y un formulario para que vos crees el tuyo!",
+    "description2":"Aplicación para crear listas de tareas y que puedas verlas en tiempo real, puedes editar y elminar a tu gusto!",
+    "description3":"Proyecto para que puedas ver el precio de la cotización del dolar actualizándose en tiempo real!"
+  },
+  "contact":{
+    "title":"Contacto",
+    "name":"Nombre",
+    "lastname":"Apellido",
+    "email":"Correo",
+    "message":"Mensaje",
+    "send":"Enviar",
+    "sent":"Enviado",
+    "nameError": "Por favor, ingrese un nombre válido",
+    "lastnameError":"Por favor, ingrese un apellido válido",
+    "emailError":"Por favor, ingrese un correo electrónico válido",
+    "messageError":"Por favor, ingrese un mensaje válido"
+    
+  },
+  "footer":{
+    "copyright":"Copyright © | Todos los derechos reservados. Hecho por {{ name }}."
+  }
+
+}
